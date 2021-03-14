@@ -49,13 +49,13 @@ firebase.auth().onAuthStateChanged(async function(user) {
 
     //create a sign-out button
     document.querySelector('.sign-in-or-sign-out').innerHTML = `
-    <button class = "text-pink-500 underline sign-out">Sign Out</button>
+      <button class="text-pink-500 underline sign-out">Sign Out</button>
     `
 
     document.querySelector('.sign-out').addEventListener('click', function (event) {
       console.log('sign out clicked')
       firebase.auth().signOut()
-      document.location.href = 'todo.html'
+      document.location.href = 'index.html'
     })
 
     console.log('signed in')
