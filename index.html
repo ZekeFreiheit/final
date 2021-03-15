@@ -10,9 +10,65 @@
 </head>
 
 <body>
-  <div class="sign-in-or-sign-out"></div> 
- 
-  <!-- Put the Firebase config here -->
+  <div class="mt:p-16 p-4">
+    <div class="flex">
+      <h1 class="w-1/2 font-bold">
+        <a href="index.html">
+          <span class="my-16 font-bold text-4xl text-center">Bespoken: </span>
+          <span class="my-16 font-bold text-2xl text-center text-purple-500">Your AI-driven language learning platform</span>
+        </a>
+      </h1>
+      <p class="w-1/2 text-right"><a href="fundus.html"><button class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-xl">Fund Us</button></a>
+    </div>
+
+    <div class="mt:p-16 p-4">
+        <div class="flex">
+            <h2 class="filter-button inline-block border-2 border-blue-500 font-bold text-black-500 rounded px-2 py-2">What We Offer? </h2>
+            <h2 class="font-bold text-purple-500 px-4 py-2">Highly customized language learning tools to boost your language learning experience!</h2>
+
+        </div>
+        
+        <h1 class="my-16 font-bold text-3xl text-center">Tell us what language(s) you woould like to learn😀</h1>
+        <div class="sign-in-or-sign-out w-full mb-8"></div>
+        <div class="todos w-full">
+          <!-- JavaScript puts stuff here -->
+        </div>
+        <form class="w-full mt-8 text-center">
+          <input type="text" id="todo" name="todo"
+            class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Confirm</button>
+        </form>
+        
+    </div>
+
+      <h1 class="my-16 font-bold text-3xl text-center">Introducing 2 new features😍</h1>
+
+    <div class="mt-16 md:flex md:space-x-4">
+      <div class="md:w-1/2">
+        <div class="space-y-4 md:mt-0 mt-8">
+          <h2 class="font-bold text-2xl">Chatbot</h2>
+          <div>
+            <img src="Chatbot.jpg">
+          </div>
+          <div><a href="chatbot.html"><button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Learn More</button></a></div>
+
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <div class="space-y-4 md:mt-0 mt-8">
+          <h2 class="font-bold text-2xl">Game Room</h2>
+          <div>
+            <img src="GameRoom.jpg">
+          </div>
+          <div><a href="gameroom.html"><button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Learn More</button></a></div>
+        </div>
+      </div>
+    </div>
+    
+    </form>
+  </div>
+
+   <!-- Put the Firebase config here -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
   <!-- Firebase Auth -->
@@ -32,62 +88,4 @@
     firebase.initializeApp(firebaseConfig);
   </script>
   <script src="index.js"></script>
-
-  <div class="mt:p-16 p-4">
-    <div class="flex">
-      <h1 class="w-1/2 font-bold">
-        <a href="index.html">
-          <span class="my-16 font-bold text-4xl text-center">Bespoken: </span>
-          <span class="my-16 font-bold text-2xl text-center text-purple-500">Your AI-driven language learning platform</span>
-        </a>
-      </h1>
-      <p class="w-1/2 text-right"><a href="fundus.html"><button class="mt-4 text-white bg-purple-500 rounded px-4 py-2">Fund Us</button></a>
-    </div>
-
-    <div class="mt:p-16 p-4">
-        <div class="flex">
-            <h2 class="filter-button inline-block border-2 border-blue-500 font-bold text-black-500 rounded px-2 py-2">What We Offer? </h2>
-            <h2 class="font-bold text-purple-500 px-4 py-2">Highly customized language learning tools to boost your language learning experience!</h2>
-
-        </div>
-        
-        <h1 class="my-16 font-bold text-3xl text-center">Tell us what language(s) you woould like to learn😀</h1>
-        <div class="sign-in-or-sign-out w-full mb-8"></div>
-        <div class="todos w-full">
-          <!-- JavaScript puts stuff here -->
-        </div>
-        <form class="w-full mt-8 text-center">
-          <input type="text" id="todo" name="todo"
-            class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
-          <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl">Confirm</button>
-        </form>
-        
-    </div>
-
-      <h1 class="my-16 font-bold text-3xl text-center">Introducing 2 new features😍</h1>
-
-    <div class="mt-16 md:flex md:space-x-4">
-      <div class="md:w-1/2">
-        <div class="space-y-4 md:mt-0 mt-8">
-          <h2 class="font-bold text-2xl">Chatbot</h2>
-          <div>
-            <img src="Chatbot.jpg">
-          </div>
-          <div><a href="chatbot.html"><button class="mt-4 text-white bg-blue-500 rounded px-4 py-2">Learn More</button></a></div>
-
-        </div>
-      </div>
-      <div class="md:w-1/2">
-        <div class="space-y-4 md:mt-0 mt-8">
-          <h2 class="font-bold text-2xl">Game Room</h2>
-          <div>
-            <img src="GameRoom.jpg">
-          </div>
-          <div><a href="gameroom.html"><button class="mt-4 text-white bg-blue-500 rounded px-4 py-2">Learn More</button></a></div>
-        </div>
-      </div>
-    </div>
-    
-    </form>
-  </div>
 </body>
